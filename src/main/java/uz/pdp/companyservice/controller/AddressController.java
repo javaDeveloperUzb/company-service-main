@@ -25,8 +25,8 @@ public class AddressController {
 
     @GetMapping
     public HttpEntity<?> getAddresses() {
-        List<Address> addresses = addressService.getAddresses();
-        return ResponseEntity.ok(addresses);
+        List<Address> addresses1 = addressService.getAddresses();
+        return ResponseEntity.ok(addresses1);
     }
 
     @GetMapping("/{id}")
